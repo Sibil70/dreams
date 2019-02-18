@@ -1,0 +1,40 @@
+.header{
+    background-color:$background;
+    width: 100%;
+    min-height: 75px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.logo{
+    &__img{
+    }
+}
+.adress{
+    display: flex;
+    flex-direction: column;
+    &__tel{
+        font-size: 21px;
+        font-family: 'Gotham';
+        font-weight: 700;
+        font-style: bold;
+        text-decoration: none;
+        color:white;
+    }
+    &__shedule{
+        font-size: 14px;
+        color: #ec1e79;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: right;
+        text-decoration: underline;
+    }
+}

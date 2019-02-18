@@ -1,0 +1,14 @@
+extends ../main.layout.pug
+
+block variables
+    - var title = "Главная"
+block content
+    include ../common/header.pug
+    .banner
+        img.banner__image(src="../../assets/images/banner.png", alt="баннер")
+    .maincontent
+        .features
+        .news
+
+block scripts
+    script(src='main.bundle.js')
