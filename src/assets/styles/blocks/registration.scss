@@ -1,0 +1,21 @@
+.registration {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    align-items: center;
+}
+.registration__form{
+    color:red;
+}
+.registration__button{
+    width:240px;
+    height:60px;
+    color:white;
+    border-radius:30px;
+    line-height: 60px;
+    text-align:center;
+    text-decoration:none;
+    background-color: #2DA66C;
+    box-shadow: 10px 10px  35px rgba(45, 166, 108, 0.5);
+
+}
