@@ -1,0 +1,43 @@
+.form{
+    display:flex;
+    width:100%;
+    justify-content: center;
+}
+.form__label{
+    width:30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.form__img{
+    position: relative;
+    display:block;
+
+}
+.form__img-pic{
+    transition: filter .5s;
+    filter:grayscale(1);
+}
+.form__checkbox{
+    display:none;
+    visibility: hidden;
+}
+.form__checkbox-fake{
+    display:block;
+    width:42px;
+    height:42px;
+    background-color: white;
+    border-radius: 50%;
+    position:absolute;
+    bottom:3.85rem;
+    left:45%;
+    transform:translate(-55%, 0);
+}
+.form__checkbox:checked ~ .form__checkbox-fake {
+    background:url('../images/icon/check.svg') center center no-repeat;
+    background-color: white;
+}
+.form__checkbox:checked ~ .form__img-pic{
+    filter:grayscale(0);
+}
+

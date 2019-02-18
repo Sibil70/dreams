@@ -1,13 +1,43 @@
-extends ../auth.layout.pug
+extends ../main.layout.pug
 
 block content
-    h1 Главная
-    form(action="")
-        label(for="email") email
-        input(mane="email" id="email")
-        label(for="password") password
-        input(type="password", id="password")
-        button выйти
-    a(href="./main.html") на главную
+    form.form(action="")
+        label.form__label(for="iphone") 
+            .form__img
+                input.form__checkbox(type="checkbox" id="iphone")
+                img.form__img-pic(src="./assets/images/iphone.png", alt="iphone", srcset="./assets/images/iphone2x.png 2x")
+                .form__checkbox-fake
+        label.form__label(for="car") 
+            .form__img
+                input.form__checkbox(type="checkbox" id="car")
+                img.form__img-pic(src="./assets/images/audi.png", alt="audiA5", srcset="./assets/images/audi2x.png 2x")
+                .form__checkbox-fake
+        label.form__label(for="palm") 
+            .form__img
+                input.form__checkbox(type="checkbox" id="palm")
+                img.form__img-pic(src="./assets/images/palm.png", alt="palm", srcset="./assets/images/palm2x.png 2x")
+                .form__checkbox-fake
+    .content
+        .content__wrap
+            .content__col.content__col-left 
+                .content__desc
+                    .content__choise iphone Xs
+                    .content__prize Cost <b> 1000$ </b>
+            .content__col.content__col-right
+                .content__text <b>Cost for traider 50$ and 2 days </b> work on our platform
+    .platform
+        .banner
+            iframe.banner__render(src="http://news-speaker.com/banners/game/RU/480x480.html", frameborder="0")
+        .description
+            .description__text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa maiores iusto, reiciendis cupiditate impedit
+            ol.description__list
+                li.description__item first
+                li.description__item second
+                li.description__item third
+    .registration
+        .registration__form Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aspernatur qui necessitatibus repudiandae exercitationem tenetur laboriosam, voluptatem ipsam laborum sequi reiciendis rem ratione fuga quam autem. Suscipit tempore odit sunt?
+        .registration__text Start some trading right now!
+        a(href="#", target="_blank").registration__button Start traiding
+
 block scripts
-    script(src='./assets/scripts/index.bundle.js')
+    script(src='./assets/scripts/main.bundle.js')

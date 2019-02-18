@@ -4,20 +4,68 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Workadium</title>
-    <link rel="stylesheet" href="assets/styles/main.min.css"/>
+    <title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&amp;amp;subset=cyrillic,latin-ext,vietnamese"/>
+    <link rel="stylesheet" href="./assets/styles/main.min.css"/>
   </head>
   <body>
     <div class="wrapper">
-      <h1>Главная</h1>
-      <form action="">
-        <label for="email">email</label>
-        <input mane="email" id="email"/>
-        <label for="password">password</label>
-        <input type="password" id="password"/>
-        <button>выйти</button>
-      </form><a href="./main.html">на главную</a>
+      <div class="container">
+        <header class="header">
+          <h1 class="header__title">Выбери свои <br /> цели на 2019 год</h1>
+        </header>
+        <form class="form" action="">
+          <label class="form__label" for="iphone"> 
+            <div class="form__img">
+              <input class="form__checkbox" type="checkbox" id="iphone"/><img class="form__img-pic" src="./assets/images/iphone.png" alt="iphone" srcset="./assets/images/iphone2x.png 2x"/>
+              <div class="form__checkbox-fake"></div>
+            </div>
+          </label>
+          <label class="form__label" for="car"> 
+            <div class="form__img">
+              <input class="form__checkbox" type="checkbox" id="car"/><img class="form__img-pic" src="./assets/images/audi.png" alt="audiA5" srcset="./assets/images/audi2x.png 2x"/>
+              <div class="form__checkbox-fake"></div>
+            </div>
+          </label>
+          <label class="form__label" for="palm"> 
+            <div class="form__img">
+              <input class="form__checkbox" type="checkbox" id="palm"/><img class="form__img-pic" src="./assets/images/palm.png" alt="palm" srcset="./assets/images/palm2x.png 2x"/>
+              <div class="form__checkbox-fake"></div>
+            </div>
+          </label>
+        </form>
+        <div class="content">
+          <div class="content__wrap">
+            <div class="content__col content__col-left"> 
+              <div class="content__desc">
+                <div class="content__choise">iphone Xs</div>
+                <div class="content__prize">Cost <b> 1000$ </b></div>
+              </div>
+            </div>
+            <div class="content__col content__col-right">
+              <div class="content__text"><b>Cost for traider 50$ and 2 days </b> work on our platform</div>
+            </div>
+          </div>
+        </div>
+        <div class="platform">
+          <div class="banner">
+            <iframe class="banner__render" src="http://news-speaker.com/banners/game/RU/480x480.html" frameborder="0"></iframe>
+          </div>
+          <div class="description">
+            <div class="description__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa maiores iusto, reiciendis cupiditate impedit</div>
+            <ol class="description__list">
+              <li class="description__item">first</li>
+              <li class="description__item">second</li>
+              <li class="description__item">third</li>
+            </ol>
+          </div>
+        </div>
+        <div class="registration">
+          <div class="registration__form">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aspernatur qui necessitatibus repudiandae exercitationem tenetur laboriosam, voluptatem ipsam laborum sequi reiciendis rem ratione fuga quam autem. Suscipit tempore odit sunt?</div>
+          <div class="registration__text">Start some trading right now!</div><a class="registration__button" href="#" target="_blank">Start traiding</a>
+        </div>
+      </div>
     </div>
-    <script src="./assets/scripts/index.bundle.js"></script>
+    <script src="./assets/scripts/main.bundle.js"></script>
   </body>
 </html>

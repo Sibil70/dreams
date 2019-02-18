@@ -6,11 +6,12 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Workadium | #{title}
+        title #{title}
+        link(rel='stylesheet' href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&amp;subset=cyrillic,latin-ext,vietnamese")
         link(rel='stylesheet' href='./assets/styles/main.min.css')
     body
         .wrapper
-            block content
-            include ./common/menu.pug
-            include ./common/footer.pug
+            .container
+                include ./common/header.pug
+                block content
         block scripts
