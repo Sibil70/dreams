@@ -1,13 +1,13 @@
 .platform {
     display: flex;
     width: 86.20689655172414%;
+    margin-bottom: 75px;
 }
 
 .banner {
-    // box-sizing: border-box;
-    padding: 1.5%;
-    width: 50%;
-    height: 380px;
+    padding: 1.5% 0;
+    width: 47%;
+    height: 368px;
 }
 
 .banner__render {
@@ -16,16 +16,16 @@
 }
 
 .description {
-    // box-sizing: border-box;
     width: 50%;
     font-size: 18px;
-    padding: 5%;
+    padding: 5% 3% 5% 13%;
     text-align:justify;
 }
 
 .description__text {
     font-weight: 700;
     line-height: 28px;
+    margin-bottom: 26px;
 }
 
 .description__list {

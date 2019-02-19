@@ -3,9 +3,22 @@
     flex-direction: column;
     padding-bottom: 30px;
     align-items: center;
+    font-size: 18px;
+    font-weight: bold;
 }
-.registration__form{
-    color:red;
+.registration__text{
+    max-width: 390px;
+    text-align: center;
+    padding: 0 33px;
+    margin-bottom: 34px;
+    letter-spacing: 1.2px;
+}
+.mbl1-form-reg{
+    border: none;
+  padding: 0;
+  z-index: 9;
+  outline: none;
+  display: block;
 }
 .registration__button{
     width:240px;

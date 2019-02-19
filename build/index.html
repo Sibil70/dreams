@@ -10,37 +10,41 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="container">
+      <div class="content-container">
         <header class="header">
           <h1 class="header__title">Выбери свои <br /> цели на 2019 год</h1>
         </header>
         <form class="form" action="">
-          <label class="form__label" for="iphone"> 
-            <div class="form__img">
-              <input class="form__checkbox" type="checkbox" id="iphone"/><img class="form__img-pic" src="./assets/images/iphone.png" alt="iphone" srcset="./assets/images/iphone2x.png 2x"/>
+          <div class="label-wrap">
+            <label class="form__label" for="iphone"> 
+              <input class="form__checkbox" type="checkbox" id="iphone"/>
+              <div class="form__img-wrap form__img-wrap-iphone"><img class="form__img-pic" src="./assets/images/iphone.png" alt="iphone" srcset="./assets/images/iphone2x.png 2x"/></div>
               <div class="form__checkbox-fake"></div>
-            </div>
-          </label>
-          <label class="form__label" for="car"> 
-            <div class="form__img">
-              <input class="form__checkbox" type="checkbox" id="car"/><img class="form__img-pic" src="./assets/images/audi.png" alt="audiA5" srcset="./assets/images/audi2x.png 2x"/>
+            </label>
+            <div class="form__text">iPhone Xs</div>
+          </div>
+          <div class="label-wrap">
+            <label class="form__label" for="car"> 
+              <input class="form__checkbox" type="checkbox" id="car"/>
+              <div class="form__img-wrap form__img-wrap-audi"><img class="form__img-pic" src="./assets/images/audi.png" alt="audiA5" srcset="./assets/images/audi2x.png 2x"/></div>
               <div class="form__checkbox-fake"></div>
-            </div>
-          </label>
-          <label class="form__label" for="palm"> 
-            <div class="form__img">
-              <input class="form__checkbox" type="checkbox" id="palm"/><img class="form__img-pic" src="./assets/images/palm.png" alt="palm" srcset="./assets/images/palm2x.png 2x"/>
+            </label>
+            <div class="form__text">Audi A5</div>
+          </div>
+          <div class="label-wrap">
+            <label class="form__label" for="palm"> 
+              <input class="form__checkbox" type="checkbox" id="palm"/>
+              <div class="form__img-wrap form__img-wrap-palm"><img class="form__img-pic" src="./assets/images/palm.png" alt="palm" srcset="./assets/images/palm2x.png 2x"/></div>
               <div class="form__checkbox-fake"></div>
-            </div>
-          </label>
+            </label>
+            <div class="form__text">Финансовая независимость</div>
+          </div>
         </form>
         <div class="content">
           <div class="content__wrap">
             <div class="content__col content__col-left"> 
-              <div class="content__desc">
-                <div class="content__choise">iphone Xs</div>
-                <div class="content__prize">Cost <b> 1000$ </b></div>
-              </div>
+              <div class="content__choise">iphone Xs</div>
+              <div class="content__prize">Cost <b> 1000$ </b></div>
             </div>
             <div class="content__col content__col-right">
               <div class="content__text"><b>Cost for traider 50$ and 2 days </b> work on our platform</div>
@@ -60,11 +64,11 @@
             </ol>
           </div>
         </div>
-        <div class="registration">
-          <div class="registration__text">Start some trading right now!</div>
-          <div class="registration__form">
-             <iframe src="https://static.olymptrade.com/lands/affiliate-new-form-v2/index.html?inp_color=2DA66C&logo_none=true&b_transparent=true&" width="385" height="460"></iframe></div><a class="registration__button" href="#" target="_blank">Start traiding</a>
-        </div>
+      </div>
+      <div class="registration">
+        <div class="registration__text">Начни зарабатывать на этом прямо сейчас!</div>
+        <div class="registration__form">
+           <iframe class="mbl1-form-reg js-reg-form" id="olymp-form" src="https://static.olymptrade.com/lands/affiliate-new-form-v2/index.html?inp_color=2DA66C&logo_none=true&b_transparent=true&" width="500" height="450"></iframe></div><a class="registration__button" href="#" target="_blank">Start traiding</a>
       </div>
     </div>
     <script src="./assets/scripts/main.bundle.js"></script>
