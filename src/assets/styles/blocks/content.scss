@@ -3,6 +3,9 @@
     font-size:21px;
     line-height: 34px;
     margin-bottom:46px;
+    @include phones {
+        margin-bottom: 35px;
+    }
 }
 .content__wrap{
     width:86.20689655172414%;
@@ -11,15 +14,53 @@
     border-radius:100px;
     display:flex;
     justify-content:space-between;
-    padding: 25px 0;
+    padding: 25px 105px;
     box-shadow:20px 10px 50px rgba(215,215,215,.3);
+    @include tablets {
+        width:95%;
+        display:block;
+        padding:25px 30px;
+        border-radius: 10px;
+    }
+    @include phones {
+        padding: 23px 20px;
+    }
 }
 .content__col{
     width:50%;
+    @include tablets {
+        width:100%;
+        display:flex;
+    }
 }
 .content__col-left{
-    padding-left:105px;
+    @include phones {
+        font-size:16px;
+        margin-bottom:5px;
+        width:95%;
+    }
 }
-.content__right-col{
+.content__col-right{
     padding-left: 10px;
+    @include tablets {
+        padding-left:0;
+    }
+    @include phones {
+        font-size: 14px;
+        line-height:20px;
+    }
+}
+.content__choise{
+    @include tablets{
+    display:flex;
+    align-items: center;
+    &:after{
+        content:'';
+        display:block;
+        width:20px;
+        height:1px;
+        background-color: black;
+        margin: 0 5px;
+        }
+    }
 }

@@ -3,29 +3,72 @@
     width:100%;
     justify-content: space-around;
     margin-bottom: 90px;
+    @include tablets {
+        display:block;
+        position:relative;
+        height:70vh;
+        margin-bottom: 35px;
+    }
+    @include phones {
+        margin-bottom:0;
+        height:80vh;
+    }
 }
-.label-wrap{
-    
+.label-wrap{ 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     width: 30%;
+    @include tablets {
+        position: absolute;
+        width:50%;
+        &--iphone{
+            left: 0%;
+            top: 47%;
+            transform:translate(0, -50%);
+        }
+        &--audi{
+            right: 0%;
+            top:0%;
+        }
+        &--palm{
+            right: 0%;
+            bottom:0%;
+        }
+    }
+    @include phones {
+        width:57%;
+        &--iphone{
+            width:47%;
+        }
+        &--audi{
+            right: 0%;
+            top:3%;
+        }
+        &--palm{
+            right: 0%;
+            bottom:7%;
+        }
+    }
 
 }
 .form__label{
     position:relative;
     margin-bottom: 40px;
     cursor: pointer;
+    @include tablets {
+        margin-bottom:0;
+    }
+    @include phones {
+        width:100%;
+
+    }
 }
 
 .form__img-wrap{
     position: relative;
     display:block;
-    &-audi{
-        padding-left: 64px;
-        padding-bottom: 20px;
-    }
     &::before{
         position:absolute;
         top: -1%;
@@ -38,22 +81,28 @@
         filter:grayscale(1);
     }
     &-iphone::before{
-        background: url(../images/iphone_bg.png) 0 93%  no-repeat;
+        background: url(../images/iphone_bg.png) 0 98%  no-repeat;
         background-size: contain;
-
     }
     &-audi::before{
-        background: url(../images/audi_bg.png) 51% 81% no-repeat;
-
+        background: url(../images/audi_bg.png) 0% 100% no-repeat;
+        @include phones {
+            background-size: 80% 93%;
+            background-position: 0 120%;
+        }
     }
     &-palm::before{
         background: url(../images/palm_bg.png) 45% 85%  no-repeat;
-
+        @include phones {
+            background-size: 90% 75%;
+        }
     }
-
 }
 .form__img-pic{
     position: relative;
+    @include tablets {
+        width:100%;
+    }
 }
 
 .form__checkbox{
@@ -70,11 +119,35 @@
     bottom:-1rem;
     left:52%;
     transform:translate(-55%, 0);
+    &.form__checkbox-fake--center{
+        left:40%;
+    }
+    @include tablets {
+        display:none;
+    }
 }
 .form__checkbox:checked ~ .form__checkbox-fake {
     background:url('../images/icon/check.svg') center center no-repeat;
     background-color: white;
+    @include phones {
+        background: none;
+    }
 }
 .form__checkbox:checked ~ .form__img-wrap::before{
     filter:grayscale(0);
+}
+.form__text{
+    @include tablets {
+        background-color: #fff;
+        padding:5px 15px;
+        min-width:105px;
+        border-radius: 25px;
+        position:absolute;
+        bottom:-4%;
+        left:50%;
+        transform:translate(-55%, 0);
+        text-align: center;
+        line-height: 18px;
+        box-shadow: 0px 0px 50px 0px rgba(101,101,101,0.2);
+    }
 }
