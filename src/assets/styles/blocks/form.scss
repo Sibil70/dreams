@@ -21,7 +21,13 @@
     justify-content: flex-end;
     width: 30%;
     @include tablets {
+        &--iphone{
+            left: 0%;
+            top: 47%;
+            transform:translate(0, -50%);
+        }
         position: absolute;
+
         width:50%;
         &--iphone{
             left: 0%;
@@ -58,6 +64,7 @@
     margin-bottom: 40px;
     cursor: pointer;
     @include tablets {
+        animation: swinging 15s ease-in-out 0s infinite;
         margin-bottom:0;
     }
     @include phones {
@@ -150,4 +157,19 @@
         line-height: 18px;
         box-shadow: 0px 0px 50px 0px rgba(101,101,101,0.2);
     }
+}
+
+@keyframes swinging{
+	0% { transform: rotate(0); }
+	5% { transform: rotate(12deg); }
+	10% { transform: rotate(-10deg); }
+	15% { transform: rotate(9deg); }
+	20% { transform: rotate(-8deg); }
+	25% { transform: rotate(7deg); }
+	30% { transform: rotate(-6deg); }
+	35% { transform: rotate(5deg); }
+	40% { transform: rotate(-4deg); }
+	45% { transform: rotate(3deg); }
+	50% { transform: rotate(0); } 
+	100% { transform: rotate(0); }
 }
