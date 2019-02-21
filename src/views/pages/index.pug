@@ -27,32 +27,20 @@ block content
                     .form__checkbox-fake
                 .form__text Финансовая независимость
         .content
-            //- .content__wrap
-            //-     .content__col.content__col-left 
-            //-         .content__choise iphone Xs
-            //-         .content__prize Cost <b> 1000$ </b>
-            //-     .content__col.content__col-right
-            //-         .content__text <b>Cost for traider 50$ and 2 days </b> work on our platform
         .platform
             .banner
-                iframe.banner__render(src="http://news-speaker.com/banners/game/RU/480x480.html", frameborder="0")
+                iframe.banner__render(src="./assets/banner/ru.html", frameborder="0")
             .description
-                .description__text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa maiores iusto, reiciendis cupiditate impedit
+                .description__text Digital-опционы - самый прибыльный торговый инструмент для работы на финансовом рынке, позволяющий получать до 1000% прибыли в сутки.
                 ol.description__list
-                    li.description__item first
-                    li.description__item second
-                    li.description__item third
+                    li.description__item Определите куда пойдет курс валюты.
+                    li.description__item Открывайте сделки в нужном направлении.
+                    li.description__item Получайте прибыль при правильном прогнозе.
     .registration
         .registration__text Начни зарабатывать на этом прямо сейчас!
         .registration__form 
             <iframe class="mbl1-form-reg js-reg-form" id="olymp-form" src="https://static.olymptrade.com/lands/affiliate-new-form-v2/index.html?inp_color=2DA66C&logo_none=true&b_transparent=true&" width="500" height="450"></iframe>
         a(href="#", target="_blank").registration__button Start traiding
-    //- script(type="template" id="content-tmp")
-    //-     .content__wrap
-    //-             .content__col.content__col-left 
-    //-                 .content__choise iphone Xs
-    //-                 .content__prize Cost <b> 1000$ </b>
-    //-             .content__col.content__col-right
-    //-                 .content__text <b>Cost for traider 50$ and 2 days </b> work on our platform
+
 block scripts
     script(src='./assets/scripts/main.bundle.js')

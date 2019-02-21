@@ -30,8 +30,6 @@ body{
     overflow: hidden;
     min-height: 100%;
     position: relative;
-    margin-bottom:60px;
-
 }
 
 .content-container{
@@ -41,9 +39,13 @@ body{
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     height: 100%;
     background:url(../images/oval.svg) 0 50% no-repeat;
-    margin-bottom: 75px;
+    margin-bottom: 0px;
+    @include tablets {
+        margin-bottom: 0px;
+    }
     @include phones {
         background-position: 100% 20%;
         margin-bottom: 40px;

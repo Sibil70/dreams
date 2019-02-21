@@ -33,6 +33,10 @@ const paths = {
     fonts: {
         src: './src/assets/fonts/**/*.*',
         dest: './build/assets/fonts/'
+    },
+    banner: {
+        src: './src/assets/banner/**/*.*',
+        dest: './build/assets/banner/'
     }
 }
 
@@ -91,6 +95,11 @@ function fonts() {
     return gulp.src(paths.fonts.src)
         .pipe(gulp.dest(paths.fonts.dest));
 }
+// перенос баннеров
+function banner() {
+    return gulp.src(paths.banner.src)
+        .pipe(gulp.dest(paths.banner.dest));
+}
 
 
 exports.styles = styles;
@@ -102,6 +111,6 @@ exports.templates = templates;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, templates, scripts, images, fonts),
+    gulp.parallel(styles, templates, scripts, images, fonts, banner),
     gulp.parallel(watch, server)
 ));
